@@ -9,7 +9,7 @@ on:
     branches: [ mainline ]
 
 env:
-  AWS_REGION: ${{ vars.AWS_ACCOUNT_REGION }}
+  AWS_REGION: ${{ vars.AWS_REGION }}
   AWS_ACCOUNT_ID: ${{ vars.AWS_ACCOUNT_ID }}
 
 # Permission can be added at job level or workflow level    
