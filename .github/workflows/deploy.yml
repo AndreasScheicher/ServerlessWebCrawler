@@ -37,6 +37,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install AWS CDK CLI
+      run: npm install -g aws-cdk<
+
     - name: Bootstrap CDK
       run: cdk bootstrap
 
