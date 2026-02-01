@@ -43,7 +43,7 @@ jobs:
         node-version: '18'
 
     - name: Install AWS CDK CLI
-      run: npm install -g aws-cdk<
+      run: npm install -g aws-cdk
 
     - name: Bootstrap CDK
       run: cdk bootstrap
