@@ -50,7 +50,7 @@ class ServerlessWebCrawlerStack(Stack):
             runtime=_lambda.Runtime.PYTHON_3_9,
             index="crawler.py",
             handler="handle",
-            reserved_concurrent_executions=2,
+            reserved_concurrent_executions=1,
             dead_letter_queue_enabled=True,
             dead_letter_queue=crawlerDLQ
             #environment={"VisitedURLsTableARN": table.table_arn}
